@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <script type="text/javascript" src="./CYE_GAPREK_code.js"></script>
+<body>
+
+    <style>
+        form {
+            margin: 10px;
+            padding: 10px;
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 1em;
+            width: 800px;
+        }
+        .estimate-wrapper {
+            margin: 10px;
+            width: 800px;
+            padding: 10px;
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .calculation-wrapper {
+            background-color: #D3D3D3;
+            padding: 10px;
+        }
+        .estimate-div {
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0 10px;
+        }
+    </style>
+<form>
+    <h1 style="color: #256eb6">Georgia's Pre-K Program Payment Calculator </h1>
+
+    <h2>Disclaimer</h2>
+    <p>This calculator provides an estimate for a Georgia's Pre-K payment for a lead teacher with a salary based on the CYE salary schedule. 
+        Please note that it may not be fully accurate.</p>
+
+    <h2>Instructions</h2>
+    <p>To utilize the calculator, please enter the relevant information for your Georgia's Pre-K lead teacher. You may adjust the Payment Timeframe 
+        to calculate estimates for the entire school year, a single month, or a specific period (e.g., a semester) based on your Pre-K classroom 
+        calendar.</p>
+        
+    <h2>Teacher Information</h2>
+    <p>Choose the appropriate provider type:</p>
+
+    <input checked type="radio" id="providerPrivate" name="providerType" value="providerPrivate">
+    <label for="providerPrivate">Private</label><br>
+    <input type="radio" id="providerPublic" name="providerType" value="providerPublic">
+    <label for="providerPublic">Public</label><br>
+
+    <br><label for="teacherCredential">Select the lead teacher's level of certification:</label>
+
+        <select name="teacherCredential" id="teacherCredential">
+            <option value="insufficient">Insufficient</option>
+            <option value="A-T1">Associate's Degree in ECE, T-1</option>
+            <option value="T1">Non-ECE Bachelor's Degree or Higher, T-1</option>
+            <option value="T1">ECE Bachelor's Degree or Higher, T-1</option>
+            <option value="T4">GaPSC Teaching Certificate, T4</option>
+            <option value="T5">GaPSC Teaching Certificate, T5</option>
+            <option value="T6">GaPSC Teaching Certificate, T6</option>
+            <option value="T7">GaPSC Teaching Certificate, T7</option>
+        </select><br>
+    <br>
+
+    <label for="teacherCYE">Number of credible years of experience for the lead teacher:</label>
+    <input value=0 type="number" id="teacherCYE" name="teacherCYE"><br>
+
+    <p style="font-weight: bold;">Payment Timeframe:</p>
+
+    <label for="instructDays">Number of instructional days:</label>
+    <input value=180 type="number" id="instructDays" name="instructDays"><br>
+    <br>
+    <label for="planningDays">Number of planning days:</label>
+    <input value=10 type="number" id="planningDays" name="planningDays"><br>
+    <br>
+
+    <input type="button" onclick="estimate()" value="Submit">
+</form>
+    <div class="estimate-wrapper">
+    <h2 style="color: #256eb6">Estimated Georgia's Pre-K Payment</h2> 
+    <div class="calculation-wrapper">
+        <div class="estimate-div">
+            <p>Lead Teacher Amount: $<span id="LT_salary"></span></p>
+            <p>Lead Teacher Benefits Amount: $<span id="LT_benefits"></span></p>
+            <p style="font-weight: bold;">Total Estimated Payment: $<span id="totalEstimate"></span></p>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
