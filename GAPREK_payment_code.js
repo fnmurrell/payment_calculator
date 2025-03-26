@@ -289,14 +289,16 @@ function estimate(){
             data.get('providerType'),
             data.get('countyType'),
             parseInt(data.get('instructDays')),
-            parseInt(data.get('studentsEnrolled'))
+            parseInt(data.get('studentsEnrolled')),
+            parseInt(data.get('instructYear'))
         );
     const leadAmount = 
         findLTSalary(
             data.get('teacherCredential'),
             parseInt(data.get('teacherCYE')),
             parseInt(data.get('instructDays')),
-            parseInt(data.get('planningDays'))
+            parseInt(data.get('planningDays')),
+            parseInt(data.get('instructYear'))
         );
     const leadBenefits = 
         findLTBenefits(
@@ -304,18 +306,21 @@ function estimate(){
             parseInt(data.get('teacherCYE')),
             parseInt(data.get('instructDays')),
             parseInt(data.get('planningDays')),
+            parseInt(data.get('instructYear')),
             data.get('providerType')
         );
     const assistantAmount = 
         findATSalary(
             parseInt(data.get('instructDays')),
-            parseInt(data.get('planningDays'))
+            parseInt(data.get('planningDays')),
+            parseInt(data.get('instructYear'))
         );
     const assistantBenefits = 
         findATBenefits(
             AT_SALARY,
             parseInt(data.get('instructDays')),
-            parseInt(data.get('planningDays'))
+            parseInt(data.get('planningDays')),
+            parseInt(data.get('instructYear'))
         );
     document.getElementById('operatingCost').innerHTML = operatingAmount.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     document.getElementById('LT_salary').innerHTML = leadAmount.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
