@@ -1,9 +1,8 @@
-Proposal: Payment Verification Report
-Objective:
+**Proposal:** Payment Verification Report
+**Objective:**
 To address concerns about the accuracy of system-generated payments, this report aims to transparently compare the payments distributed by the system with independently calculated expected payments over the past school year. This will help identify any discrepancies and reinforce confidence in the system's integrity.
 
-Scope:
-
+**Scope:**
 Timeframe: Past 10 months (Typically, we will run as YTD to validate each payment run throughout the school year)
 
 Data Sources:
@@ -27,3 +26,15 @@ Benefits:
 
 Next Steps:
 Once approved, we can define the business rules for expected payments and gather the necessary data. A draft report can be delivered within 5 business days after data collection is complete.
+
+Data Requirements:
+* Teacher payment data
+*   Provider Type
+*   Teacher Type
+*   Level of Certification
+*   Salary Step
+*   Number of instructional + planning days
+* Student payment data
+*   Provider Type
+*   County Type
+*   Number of instructional days
