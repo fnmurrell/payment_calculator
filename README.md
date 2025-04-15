@@ -30,12 +30,12 @@ Once approved, we can define the business rules for expected payments and gather
 
 Data Requirements:
 * Teacher payment data
-*   Provider Type
-*   Teacher Type
-*   Level of Certification
-*   Salary Step
-*   Number of instructional + planning days
+    *   Provider Type
+    *   Teacher Type
+    *   Level of Certification
+    *   Salary Step
+    *   Number of instructional + planning days
 * Student payment data
-*   Provider Type
-*   County Type
-*   Number of instructional days
+    *   Provider Type
+    *   County Type
+    *   Number of instructional days
