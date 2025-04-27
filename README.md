@@ -29,9 +29,10 @@ Next Steps:
 Once approved, we can define the business rules for expected payments and gather the necessary data. A draft report can be delivered within 5 business days after data collection is complete.
 
 Data Requirements:
-Teacher Name | Begin Date | End Date | Instruction Days | Teacher Type | Level of Certification | Salary Step | Frozen Salary Floor | Provider Type | County Type | Students Enrolled | 2025-08-01 | 2025-08-02 | 2025-08-03 | ...
+Class ID | Teacher Name | Begin Date | End Date | Instruction Days | Teacher Type | Level of Certification | Salary Step | Frozen Salary Floor | Provider Type | County Type | Students Enrolled | 2025-08-01 | 2025-08-02 | 2025-08-03 | ...
 
 * All dates should be in YYY-MM-DD format
+* Class ID: string (5-6 digits)
 * Teacher Name: string
 * Begin Date: string
 * End Date: string
