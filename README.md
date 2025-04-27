@@ -29,13 +29,18 @@ Next Steps:
 Once approved, we can define the business rules for expected payments and gather the necessary data. A draft report can be delivered within 5 business days after data collection is complete.
 
 Data Requirements:
-* Teacher payment data
-    *   Provider Type
-    *   Teacher Type
-    *   Level of Certification
-    *   Salary Step
-    *   Number of instructional + planning days
-* Student payment data
-    *   Provider Type
-    *   County Type
-    *   Number of instructional days
+Teacher Name | Begin Date | End Date | Instruction Days | Teacher Type | Level of Certification | Salary Step | Frozen Salary Floor | Provider Type | County Type | Students Enrolled | 2025-08-01 | 2025-08-02 | 2025-08-03 | ...
+
+* All dates should be in YYY-MM-DD format
+* Teacher Name: string
+* Begin Date: string
+* End Date: string
+* Instruction Days: integer
+* Teacher Type: string (Lead Teacher, Assistant Teacher)
+* Level of Certification: string
+* Salary Step: string
+* Frozen Salary Floor: float
+* Provider Type: string (Public, Private)
+* County Type: string (Non-Metro, Metro)
+* Students Enrolled: integer
+* Calendar Days: string (should include every non-weekend/holiday/break from the Calendar_Day_c object)
